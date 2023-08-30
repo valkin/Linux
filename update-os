@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "#==========================================#"
+echo "#== Comandos para actualizar el Full OS ===#"
+echo "#==========================================#"
+
+sleep 1
+
+clear
+echo -n "Eres administrador del sistema: S/N "
+
+	read cfm
+	if [[ "$cfm" -eq "S" ]] || [[ "$cfm" -eq "s" ]];
+	then
+		echo "Actualizando los repositorios"
+		echo "VAR $cfm"
+
+	elif [[ "$cfm" -eq "N" ]] || [[ "$cfm" -eq "n" ]];
+	then
+		echo "Necesitas ser ROOT"
+		sudo -i
+		echo "Actualizando los repositorios"
+                apt-get update 
+		echo "Actualizando full paqueteria"
+		apt-get  full-upgrade -y 
+	fi
+
+exit
