@@ -1,1 +1,1 @@
-Estos script son ejemplos para practicas de estudio
+Estos scripts son ejemplos para practicas de estudio
