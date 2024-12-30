@@ -7,7 +7,7 @@ CONTACTO=$3
 
 #Plantilla
 cat << EOF
-Bienvenido a la plantilla de Texto Generado en Bash en $SITE.
-Creado por $AUTHOR.
-Contactenme al $CONTACT.
+Bienvenido a la plantilla de Texto Generado en Bash en $SITIO.
+Creado por $AUTOR.
+Contactenme al $CONTACTO.
 EOF
